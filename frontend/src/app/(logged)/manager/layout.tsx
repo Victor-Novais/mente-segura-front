@@ -1,7 +1,7 @@
 'use client'
 
 import { AppSidebar } from '@/components/layout/sidebar'
-import { OnboardingProvider } from './onboarding/OnboardingProvider'
+
 import { StartTourButton } from '@/components/StartTourButton'
 import { useRouter } from 'next/navigation'
 import {
@@ -78,7 +78,7 @@ export default function ManagerLayout({
   ]
 
   return (
-    <OnboardingProvider>
+  
       <AppSidebar
         groups={groups}
         footerItems={footerItems}
@@ -93,6 +93,6 @@ export default function ManagerLayout({
         {/* Conteúdo da página */}
         {children}
       </AppSidebar>
-    </OnboardingProvider>
+    
   )
 }
